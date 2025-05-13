@@ -21,3 +21,50 @@ Make sure Python 3.8+ is installed. Install the dependencies using:
 ```bash
 pip install -r requirements.txt
 # resume-job-matcher
+💻 How to Run
+bash
+streamlit run ui/streamlit_app.py
+This will open a web interface in your browser at http://localhost:8501.
+
+📁 Folder Structure
+resume-job-matcher/
+│
+├── api/                    # API logic (optional)
+├── matcher/                # Matching engine logic
+├── parser/                 # Resume and job description parsing
+│   ├── resume_parser.py
+│   └── job_parser.py
+├── ui/
+│   └── streamlit_app.py    # Main Streamlit app
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+📚 Usage
+Run the app.
+
+Upload a resume in PDF format.
+
+Either paste a job description or upload a .txt/.pdf file.
+
+See the match results and similarity score!
+
+🧠 Tech Stack
+Python 🐍
+
+Streamlit 🎈
+
+spaCy / NLTK for NLP
+
+Scikit-learn (TfidfVectorizer or similar)
+
+PDFMiner or PyMuPDF for reading PDFs
+
+🛡️ License
+MIT License. Feel free to use, modify, and share this project!
+
+👨‍💻 Author
+Deepanshu Joshi
+GitHub: deepanshu3012
+
+
